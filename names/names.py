@@ -24,6 +24,11 @@ for name_2 in names_2:
     if bst.contains(name_2):
         duplicates.append(name_2)
 
+# array only solution
+# for name_2 in names_2:
+#     if name_2 in names_1:
+#         duplicates.append(name_2)
+
 end_time = time.time()
 print(f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
 print(f"runtime: {end_time - start_time} seconds")
